@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+.link {
+  @apply text-lg hover:underline hover:text-blue-300 border-2 p-2 rounded-lg hover:border-blue-300 shadow-md shadow-blue-300
+}
+
+body {
+  @apply text-stone-100 bg-stone-900;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}

@@ -1,0 +1,17 @@
+import { Planet } from "@/app/_store/types";
+
+type Props = {
+  planet: Planet;
+}
+
+export const PlanetCard: React.FC<Props> = ({planet}) => {
+  return (
+    <div className="flex flex-col max-w-[500px] w-full sm:w-fit items-center bg-stone-800 justify-center p-4 m-4 border-2 border-white rounded-lg">
+      <h2 className="text-2xl font-bold mb-4">{planet.name}</h2>
+      <p className="text-center text-blue-300">Population: {planet.population}</p>
+      <p className="text-center text-blue-300">Climate: {planet.climate}</p>
+      <p className="text-center text-blue-300">Terrain: {planet.terrain}</p>
+      <p className="text-center underline font-bold pt-2">Diameter: {planet.diameter}</p>
+    </div>
+  );
+}
